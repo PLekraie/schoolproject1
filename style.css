@@ -129,7 +129,7 @@ table {
 
 body {
   background-color: rgb(151, 222, 255);
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 .hidden {
@@ -144,21 +144,79 @@ body {
 
   padding: 0.5rem;
   padding-left: 2rem;
-  padding-right: 3rem;
+  padding-right: 4rem;
 
-  background-color: rgb(95, 95, 95);
+  background-color: #134470;
   border-radius: 5rem;
+}
+
+nav ul li {
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  color: #E6EAED;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  text-decoration: none;
+  color: #E6EAED; /*surpasse le reste :/ */
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #FE6D73;
+}
+
+nav ul li:hover {
+  color: #FE6D73;
+  cursor: pointer;
+}
+
+.img {
+  background: url(img/bg.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .content {
   height: 100vh;
   padding-top: 20vh;
-  color: aliceblue;
-  background-color: rgb(39, 39, 39);
+  color: #E6EAED;
+  background-color: #031a2d;
 }
 
-.viewsElement{
+.viewsElement {
   height: 90%;
+  padding-left: 2rem;
+}
+
+.viewsElement h2{
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+#about p{
+  width: 55%;
+  min-width: 400px;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif !important;
+}
+
+.credits{
+  width: 60%;
+  margin: auto;
 }
 
 /*
@@ -208,21 +266,7 @@ nav ul li {
   list-style-type: none;
 }
 
-nav ul li a {
-  text-decoration: none;
-  margin-left: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
-nav ul li a:hover {
-  border-bottom: 2px solid #000;
-  padding-bottom: 0.5rem;
-}
-
-a:visited {
-  color: #000;
-}
 
 #arrow-up {
   position: fixed;
