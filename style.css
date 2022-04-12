@@ -64,6 +64,7 @@ nav ul li:hover {
 .viewsElement {
 	height: 90%;
 	padding-left: 2rem;
+	overflow: auto;
 }
 
 .viewsElement h2 {
@@ -72,9 +73,14 @@ nav ul li:hover {
 }
 
 #about p {
+	font-size: 1.2rem;
 	width: 55%;
 	min-width: 400px;
-	font-size: 1.2rem;
+}
+
+.viewsElement p {
+	width: 65%;
+	min-width: 400px;
 }
 
 h1,
@@ -90,79 +96,53 @@ h1 {
 	color: #fe6d73;
 }
 
+h3 {
+	font-size: 1.5rem !important;
+}
+
 .credits {
 	width: 60%;
 	margin: auto;
 }
 
-/*
-header {
-  width: 100%;
-  height: 7%;
-  min-height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(195, 213, 234, 0.5);
-  box-shadow: 0 0.5rem 1rem rgba(155, 174, 196, 0.5);
-
-  align-items: center;
-  margin-bottom: 1rem;
-
-  z-index: 99;
+form {
+	width: 55%;
+	min-width: 400px;
 }
 
-#header-image {
-  width: 100%;
-  height: 90vh;
-  max-height: 880px;
-  background-image: url("header.jpg");
-  margin:0;
-
-  background-repeat: no-repeat;
-  background-position-x: center;
+.viewsElement li p:nth-child(2) {
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
 }
 
-h1 {
-  margin-left: 50px;
+.viewsElement li p:nth-child(3) {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
 }
 
-nav {
-  margin-right: 50px;
+.viewsElement li p:nth-child(4) {
+	font-size: 1.2rem;
 }
 
-nav ul {
-  display: flex;
+.viewsElement li {
+	margin-bottom: 1.3rem;
+	direction: ltr;
 }
 
-nav ul li {
-  list-style-type: none;
+.colored {
+	color: #fe6d73;
 }
 
-
-
-#arrow-up {
-  position: fixed;
-  bottom: 5%;
-  right: 1%;
-  z-index: 98;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: #c3d5ea;
-  border-radius: 0.5rem;
+.viewsElement ul {
+	direction: rtl;
+	max-height: 75%;
+	overflow: auto;
+	scrollbar-color: #134470 #031a2d;
+	scrollbar-width: thin;
 }
 
-#arrow-up:hover {
-  background-color: rgb(0, 86, 156);
-  color: #fff;
+.viewsElement::-webkit-scrollbar {
+	width: 5px;
+	height: 8px;
+	background-color: #031a2d;
 }
-
-footer {
-  width: 100%;
-  height: 200px;
-  background-color: blue;
-} */
