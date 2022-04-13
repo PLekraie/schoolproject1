@@ -21,6 +21,15 @@ body {
 	border-radius: 5rem;
 }
 
+.headBar button{
+	display: none;
+
+	border: none;
+	background-color: transparent;
+	font-size: 1.5rem;
+	color: #e6eaed;
+}
+
 nav ul li {
 	margin-left: 2rem;
 	text-transform: uppercase;
@@ -52,6 +61,15 @@ nav ul li:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	transition: ease-in-out 3s;
+}
+
+.img:hover{
+	background: url(img/bg2.jpg) center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .content {
@@ -75,12 +93,11 @@ nav ul li:hover {
 #about p {
 	font-size: 1.2rem;
 	width: 55%;
-	min-width: 400px;
 }
 
 .viewsElement p {
 	width: 65%;
-	min-width: 400px;
+	min-width: 320px;
 }
 
 h1,
@@ -145,4 +162,34 @@ form {
 	width: 5px;
 	height: 8px;
 	background-color: #031a2d;
+}
+
+@media screen and (max-width:800px) {
+	.headBar{
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.headBar h1{
+		font-size: 2rem;
+	}
+
+	#menu{
+		display: none !important;
+	}
+
+	.headBar button{
+		display: block;
+	}
+
+	#menu.opened{
+		height: 100vh;
+		display: block !important;
+	}
+
+	#menu.opened li{
+		width: 100%;
+		text-align: center;
+		margin-top: 5vh;
+	}
 }

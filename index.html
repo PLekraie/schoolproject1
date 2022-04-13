@@ -20,10 +20,12 @@
 		<header class="row justify-content-center">
 			<div class="headBar row align-items-center justify-content-between">
 				<h1 onclick="switchView('about')">Pauline Lekraie</h1>
-
-				<nav>
+				<button onclick="changeMenu()" id="burger">
+					<i class="fa-solid fa-burger"></i>
+				</button>
+				<nav id="menu">
 					<ul class="row">
-						<li onclick="switchView('about')">Présentation</li>
+						<li onclick="switchView('about')" >Présentation</li>
 						<li onclick="switchView('formation')">Formation</li>
 						<li onclick="switchView('experience')">Expérience</li>
 						<li><a href="https://dribbble.com/PLekraie" target="_blank">Portfolio</a></li>

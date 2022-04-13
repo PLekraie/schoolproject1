@@ -1,0 +1,73 @@
+html {
+	background: url(img/bg.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background-color: rgba(255, 255, 255, 0.658);
+
+	border: 2px #000 solid;
+	border-radius: 2rem;
+
+	margin: 5rem;
+	padding: 3rem;
+
+	text-align: center;
+}
+
+#loginMngt {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2rem;
+}
+
+#loginMngt button {
+	border: none;
+	background-color: transparent;
+	color: red;
+	margin-left: 2rem;
+	font-size: 1.05rem;
+}
+
+h1 {
+	color: #008001;
+	margin-bottom: 0;
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1rem;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	color: #355535;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+em {
+	font-style: italic; /*in case of annoying browser*/
+}
+
+.content {
+	margin-bottom: 5rem;
+}
+
+ol,
+ul {
+	list-style-position: inside;
+}
